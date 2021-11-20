@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: hexo g
+    - run: |
+            pwd
+            ls
     - run: hexo d
     - run: npm test
